@@ -78,31 +78,60 @@ nav > ul{
     color: #9b9898;
 }
 
+
+/* Feel the Difference */
+
 .feel-the-difference {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 50vh;
-    background-color: #ffffff;
+    position: relative;
+    background-color: rgb(250, 250, 250);
 }
 
 .feel-the-difference h1 {
-    margin-bottom: 50px;
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+    color:rgb(80, 80, 80);
+    font-size: 45px;
+    font-family: "Moderustic", sans-serif;
+    font-weight: 800;
 }
 
 .feel-the-difference .text-box {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    padding: 40px;
+    position: relative;
+}
+
+.secure-fit, .adjust-tension, .size-fits {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 40px;
+    max-width: 280px;
 }
 
-.best-sellers {
-    height: 80vh;
-    background-color: rgb(240, 240, 240);
+.secure-fit h3, .adjust-tension h3, .size-fits h3 {
+    color:rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: "Moderustic", sans-serif;
+    font-weight: 500;
 }
 
-Footer {
-    height: 25vh;
-    background-color: rgb(250, 250, 250);
+.secure-fit p, .adjust-tension p, .size-fits p {
+    color:rgb(146, 146, 146);
+    font-size: 18px;
+    font-family: "Moderustic", sans-serif;
+    font-weight: 300;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+.text-box img {
+    width: 55px;
+    height: auto;
 }
