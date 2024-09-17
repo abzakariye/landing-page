@@ -70,3 +70,49 @@ nav > ul{
     font-size: 17px;
     color: #d5d5d5;
 }
+
+
+/* Best seller start */
+.best-seller{
+    background: rgb(240, 240, 240);
+    height: 80vh;
+}
+
+.best-seller .best-seller-container{
+    margin:  0 50px;
+}
+
+.best-seller-header{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0;
+}
+
+.best-seller-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.best-seller-grid-card{
+    height: 450px;
+    width: 450px;
+}
+
+#card1{
+    background: url(../images/small-grid1.jpg) no-repeat;
+    background-size: contain;
+}
+
+#card2{
+    background: url(../images/card2.jpg) no-repeat;
+    background-size: contain;
+}
+
+#card3{
+    background: url(../images/card3.jpg) no-repeat;
+    background-size: contain;
+}
+
+
+
+/* Best seller end */
