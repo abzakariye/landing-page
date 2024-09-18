@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    height: 240vh;
+    height: auto;
 }
 
 .nav-bar{
@@ -40,9 +40,16 @@ nav > ul{
     color: #0e0e0e
 }
 
+@keyframes heroBackgroundFade {
+    0%, 100% { background-image: url(../images/pexels-jddaniel-2385477.jpg); }   
+    25% { background-image: url(../images/hero2.jpg); }   
+    50% { background-image: url(../images/hero3.jpg); }   
+    75% { background-image: url(../images/hero4.jpg); }    
+}
+
 .hero{
     background-image: url(../images/pexels-jddaniel-2385477.jpg);
-    background-color: rgba(40, 39, 39, 0.678);
+    background-color: rgba(24, 23, 23, 0.8);
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
@@ -51,6 +58,7 @@ nav > ul{
     height: 100vh;
     width: 100%;
     margin-bottom: 20px;
+    animation: heroBackgroundFade 25s ease-out infinite;
 }
 .hero-text{
     display: flex;
@@ -131,23 +139,33 @@ nav > ul{
     margin-left: 10%;
 }
 
-.text-box img {
+.circle img {
     width: 55px;
     height: auto;
 }
 
+.circle {
+    background-color: rgba(0, 255, 255, 0.400);
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* Footer styles */
+
 .site-footer {
-    background-color: #333;
+    background-color: #424242;
     color: white;
     padding: 40px 0;
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
@@ -155,13 +173,13 @@ nav > ul{
 }
 
 .footer-column {
-    flex: 1;
-    margin: 0 20px;
+    margin: 0 60px;
 }
 
 .footer-column h4 {
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom: 20px;
+    font-family: "Roboto", sans-serif;
 }
 
 .footer-column ul {
@@ -171,6 +189,7 @@ nav > ul{
 
 .footer-column ul li {
     margin-bottom: 10px;
+    font-family: "Moderustic", sans-serif;
 }
 
 .footer-column ul li a {
@@ -184,7 +203,19 @@ nav > ul{
 
 .social-links {
     display: flex;
+    flex-direction: column;
     gap: 10px;
+}
+
+.social-links li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.social-links img {
+    width: 25px;
+    height: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -195,6 +226,11 @@ nav > ul{
 
     .footer-column {
         margin-bottom: 20px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
     }
 }
 
