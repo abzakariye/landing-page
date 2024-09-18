@@ -8,8 +8,8 @@ body{
     justify-content: space-between;
     background-color: transparent;
     padding-inline: 1rem;
-    border-bottom: 1px solid black;
-    
+    background-color: #ffffff;
+    box-shadow: 0 3px 6px #000000b4;
 }
 
 .shopping-cart{
@@ -18,6 +18,7 @@ body{
 
 .logo > img {
     width: 50px;
+    padding: 7px;
 }
 
 nav > ul{
@@ -30,7 +31,8 @@ nav > ul{
 .nav-link{
     color: #606060;
     font-size: 18px;
-    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
     text-decoration: none;
 }
 
@@ -40,79 +42,59 @@ nav > ul{
 
 .hero{
     background-image: url(../images/pexels-jddaniel-2385477.jpg);
-    background-color: rgba(40, 39, 39, 0.65);
+    background-color: rgba(40, 39, 39, 0.678);
     background-blend-mode: darken;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    height: 120vh;
+    height: 100vh;
     width: 100%;
-    margin-top: -16px;
+    margin-bottom: 20px;
 }
 .hero-text{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 500px;
-    color: white;
+    max-width: 600px;
     padding: 5rem;
 }
 
 .hero-text h1{
     text-transform: uppercase;
-    font-size: 47px;
-    font-weight: bolder;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 900;
+    margin-bottom: 20px;
 }
 
 .hero-text > p{
-    font-size: 17px;
-    color: #d5d5d5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #9b9898;
 }
 
 
-/* Best seller start */
-.best-seller{
-    background: rgb(240, 240, 240);
-    height: 80vh;
+/* Feel the Difference */
+
+.feel-the-difference {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 50vh;
+    position: relative;
+    background-color: rgb(250, 250, 250);
 }
 
-.best-seller .best-seller-container{
-    margin:  0 50px;
+.feel-the-difference h1 {
+    margin-top: 2.5%;
+    margin-bottom: 20px;
+    color:rgb(80, 80, 80);
+    font-size: 45px;
+    font-family: "Moderustic", sans-serif;
+    font-weight: 800;
 }
-
-.best-seller-header{
-    text-align: center;
-    font-size: 40px;
-    padding: 20px 0;
-}
-
-.best-seller-grid{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.best-seller-grid-card{
-    height: 450px;
-    width: 450px;
-}
-
-#card1{
-    background: url(../images/small-grid1.jpg) no-repeat;
-    background-size: contain;
-}
-
-#card2{
-    background: url(../images/card2.jpg) no-repeat;
-    background-size: contain;
-}
-
-#card3{
-    background: url(../images/card3.jpg) no-repeat;
-    background-size: contain;
-}
-
-
-
-/* Best seller end */
